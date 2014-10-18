@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.71557,-6.34397)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.71557,-6.34397),
+      map: map,
+      title: 'Barlow House'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Irish Maritime Festival</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="index.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> THE IRISH MARITIME FESTIVAL </h3> </p>
+	
+	<p> <h2> <img src="EventImages/Intro_Pic01.jpg"/> </h2> </p>
+	
+	<p>
+
+Welcome to The Irish Maritime Festival - a spectacular celebration of all things seafaring taking place in Drogheda Port, County Louth from June 13th to 15th.
+	</p>
+	
+	<p>A feast of maritime fun including full-scale pirate ships battling on the River Boyne, a coastal rowing race, show-stopping watersports, a Boyne swim, a Maritime Pavilion plus a host of cultural and family entertainment will accompany the arrival of five beautifully restored schooners to Drogheda port.
+	</p>
+	<p>
+
+Festivalgoers will be spoiled for choice with fun fairs, boat and canoe trips on the river, stunning watersports displays, a real food village, boat-building workshops, a stand-up paddle boarding race, art and photography zones and a maritime history pavilion.
+	</p>
+	<p>
+Also throughout the weekend you can visit the Maritime Education, Enterprise and Careers Centre and learn more about our coast and environment and the interesting maritime careers available.
+	</p>
+	<p>
+A temporary beach offers the chance to create the ultimate sandcastle while expert sand sculptors will be at work on their creations.
+	</p>
+	<p>
+Looking forward to welcoming you to County Louth
+	</p>
+	
+		<p>
+There will be an admission fee of €2 per adult on Saturday 14th and Sunday 15th June 2014. Children under 16 years old go free.
+	</p>
+	
+	<br>
+				<p><b>Festival Opening Times</b></p>
+				<p>Friday 13th 11.45am – 9pm (Food Artisan Quarter 6pm)</p>
+				<p>Saturday 14th 10am – 9pm (Food Artisan Quarter 6pm)</p>
+				<p>Sunday 15th 12pm – 5pm</p>
+				
+				<p><b>Ships are accessible to the pubic during the following times</b></p>
+				<p>Friday 13th 1.30pm – 4pm</p>
+				<p>Saturday 14th 11am – 3pm</p>
+				<p>Sunday 15th 12pm-4pm</p>
+	<br>
+	
+	
+	
+	
+	<br>
+	<p> <h2> <img src="SponsorLogos/Commercial.png"/> </h2> </p>
+	<p> <h2> <img src="SponsorLogos/LocalAuthority.png"/> </h2> </p>
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

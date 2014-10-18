@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.71568,-6.57327)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.71568,-6.57327),
+      map: map,
+      title: 'SLANE FARM'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Slane Farm Hostel And Cottages</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="hotels.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Slane Farm Hostel And Cottages</h3> </p>
+	
+	<p> <h2> <img src="HotelPics/Hotel05_Pic01.jpg" width="395px" height="215px"/> </h2> </p>
+	
+	<p> Harlinstown House, Slane, Co. Meath</p>
+	<p> Tel: 041 9884985   </p>     
+	<p> Email: <a href="mailto:info@slanefarmhostel.ie">info@slanefarmhostel.ie</a></p>
+	<p><a href= "http://www.slanefarmhostel.ie">www.slanefarmhostel.ie</a></p>
+		
+	<br>
+	<p> Farm Hostel and Cottages prides itself with an atmosphere of simple comfort and easy going familiarity. Next door to Slane Castle the Hostel and Cottages are an ideal base for exploring the many wonders of the Boyne Valley including Newgrange, Tara, Kells, Battle of Boyne</p>
+	<p> Guests have a choice of private rooms, dormitories ,or the 4****self catering cottages</p>
+	<p> This working farm is run by Joanne and Paddy Macken and their family who will do their utmost to make your stay an enjoyable one. If you would like to camp at Slane Farm then get in touch with us to make a booking. </p> 
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

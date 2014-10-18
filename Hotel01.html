@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.717618,-6.348315)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.717618,-6.348315),
+      map: map,
+      title: 'SCHOLARS TOWNHOUSE HOTEL'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Scholars Townhouse Hotel</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="hotels.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Scholars Townhouse Hotel </h3> </p>
+	
+	<p> <h2> <img src="HotelPics/Hotel01_Pic01.jpg" width="300px" height="400px"/> </h2> </p>
+	
+	<p> Palace Street, Drogheda, Co. Louth.</p>
+	<p> Tel: 041 9835410 </p>     
+	<p> Email: <a href="mailto:info@scholarshotel.com">info@scholarshotel.com</a></p>
+	<p><a href= "http://www.scholarshotel.com">www.scholarshotel.com</a></p>
+		
+	<br>
+	<p> This award winning hotel and restaurant has been described as "an oasis of relaxation" in the heart of the vibrant town of Drogheda. Scholars Townhouse has gone from strength to strength and has won best public house / restaurant 2008 in the Drogheda Beauty on The Boyne Awards, Best new Business 2008/2009 in the Chamber of Commerce Business Excellence Awards. Paulo Tullio, Georgina Campbell and The Michelin Guide also recommend Scholars for both 2008 and 2009. </p>
+	<br>
+	<p> The McGowan family (Martin, Patricia, Mark & Glenn) who own and manage the hotel have fully modernised the building and created the rich, classic and comfortable interior which you experience today. Both the family and staff are proud to give each and every visitor a homely and friendly yet professional service in what has become known locally as Drogheda's Premier Hotel and Restaurant.</p>
+	<br>
+	<p> <b><i>JOHN HOLLAND MEMORIAL STATUE (1840-1914)</i></b></p>
+	<p> John Philip Holland is widely regarded as the father of the modern submarine.  He was an Irish Engineer who developed the first submarine to be formally commissioned by the US and first Royal Navy submarine the Holland 1.  He lived in Drogheda, in what is now known as Scholars Hotel and Restaurant.</p>
+	<p>The owner of Scholars, Martin McGowan, will unveil a memorial to Mr. Holland's world renowned legacy during the festival week-end. </p>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

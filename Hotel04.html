@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.71424,-6.344851)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.71424,-6.344851),
+      map: map,
+      title: 'The D Hotel'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">The D Hotel</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="hotels.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> The D Hotel</h3> </p>
+	
+	<p> <h2> <img src="HotelPics/Hotel04_Pic01.JPG" width="395px" height="215px"/> </h2> </p>
+	
+	<p> Scotch Hall, Marsh Road, Drogheda, Co. Louth.</p>
+	<p> Tel: 041 9877700   </p>     
+	<p> Email: <a href="mailto:info@thedhotel.com">info@thedhotel.com</a></p>
+	<p><a href= "http://www.thedhotel.com">www.thedhotel.com</a> </p>
+		
+	<br>
+	<p> The award winning 4 star d hotel Drogheda is located on the banks of the historic River Boyne. This impressive waterfront location includes the Scotch Hall shopping complex and a purpose built pedestrian bridge to the historic town centre of Drogheda</p>
+	<p> The d hotels 104 bedrooms are contemporary, extremely comfortable and modern and are equipped with tea and coffee making facilities, complimentary broadband, flat screen tv, hairdryers and mini fridges. The hotel has a host of extensive facilities including 6 meeting and event suites hosting up to 250 guests, the Viaduct Bar & Grill, a Mini Gym and Games Room</p>
+	<p> The hotel is located within walking distance of Drogheda Train and Bus Stations and has extensive guest car parking. The d Hotel is not only a glamorous destination for visitors to Drogheda but it is also the premier location for parties, celebrations, weddings and meetings. The d Hotel is at the heart of all that goes on in Drogheda! </p> 
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

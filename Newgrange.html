@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Maritime Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+	    
+		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script> 
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.694567 ,-6.4463)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.694567 ,-6.4463),
+      map: map,
+      title: 'Newgrange'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+	
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Newgrange</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h2> <img src="AttractionImages/Photo14.jpg"/> </h2> </p>
+	
+	<br>
+	
+	<p>	<h1> Newgrange  </h1>	</p>
+	
+	<br>
+	
+	<p>Newgrange was constructed over 5,000 years ago (about 3,200 B.C.), making it older than Stonehenge in England and the Great Pyramid of Giza in Egypt. Newgrange was built during the Neolithic or New Stone Age by a farming community that prospered on the rich lands of the Boyne Valley. Knowth and Dowth are similar mounds that together with Newgrange have been designated a World Heritage Site by UNESCO.</p>
+	<p>Archaeologists classified Newgrange as a passage tomb, however Newgrange is now recognised to be much more than a passage tomb. Ancient Temple is a more fitting classification, a place of astrological, spiritual, religious and ceremonial importance, much as present day cathedrals are places of prestige and worship where dignitaries may be laid to rest.</p>
+	<p>Newgrange is a large kidney shaped mound covering an area of over one acre, retained at the base by 97 kerbstones, some of which are richly decorated with megalithic art. The 19 metre long inner passage leads to a cruciform chamber with a corbelled roof. The amount of time and labour invested in construction of Newgrange suggests a well-organized society with specialised groups responsible for different aspects of construction.</p>
+	<p>Newgrange is part of a complex of monuments built along a bend of the River Boyne known collectively as Bru na Boinne. The other two principal monuments are Knowth (the largest) and Dowth, but throughout the region there are as many as 35 smaller mounds.</p>
+	<p>Visitor access to Newgrange is by guided tour only from the Bru na Boinne Visitor Centre on the south side of the river Boyne.</p>
+
+	<br>
+	<p><a href= "http://www.Newgrange.com">www.Newgrange.com</a> </p>
+	<br>
+	
+	 <div id="map-canvas"></div>
+	 
+	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

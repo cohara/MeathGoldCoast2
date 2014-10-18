@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Maritime Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+	    
+		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.777773, -6.417744)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.777773, -6.417744),
+      map: map,
+      title: 'Monasterboice High Cross'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+	
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Monasterboice High Cross</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+	<p> <h2> <img src="AttractionImages/Photo17.jpg" /> </h2> </p>
+	
+		
+	<p>	<h1> Monasterboice High Cross</h1>	</p>
+	
+	<br>
+	
+	<p>In the 5th century, St Buite founded a monastic community near Drogheda in County Louth and today, it is home to an impressive collection of ruins. On the site, visitors can discover an old graveyard, two churches and a sundial.</p>
+	<p>Monasterboice is most famous for its spectacular high crosses especially the cross of Muineadach an outstanding example of high crosses of the early Christian period, noted as being the tallest in Ireland. It is monolith, 5 metres high, which features many detailed scenes from the Bible. The crosses stand in the shadow of a magnificent Round Tower, about 300 metres high. Monasterboice was a thriving centre of religion and learning until 1142, when the Cistercians arrived at the nearby Mellifont Abbey.</p>
+	
+	<br>
+	<p><a href= "http://www.discoverireland.ie/Arts-Culture-Heritage/monasterboice/52774">Monasterboice High Cross</a> </p>
+	<br>
+	
+	 <div id="map-canvas"></div>
+	 
+	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

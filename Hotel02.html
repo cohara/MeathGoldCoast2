@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.714937,-6.353461)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.714937,-6.353461),
+      map: map,
+      title: 'Westcourt Hotel'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Westcourt Hotel</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="hotels.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Westcourt Hotel </h3> </p>
+	
+	<p> <h2> <img src="HotelPics/Hotel02_Pic01.jpg"/> </h2> </p>
+	
+	<p> 29 West Street, Drogheda, Co. Louth.</p>
+	<p> Tel: 041 9830965/8  </p>     
+	<p> Email: <a href="mailto:reservations@westcourt.ie">reservations@westcourt.ie</a></p>
+	<p><a href= "http://www.westcourt.ie">www.westcourt.ie</a> </p>
+		
+	<br>
+	<p> The Westcourt Hotel has been transformed into the hippest & liveliest luxury designer hotel in the region. After a major refurbishment in April 2011 the Westcourt Hotel now attains the status as the most popular hotel in Drogheda and the surrounding area </p>
+	<p> Just 20 mins from Dublin Airport along the M1 Dubin-Belfast route the Westcourt Hotel is located in the heart of Drogheda and the historic Boyne Valley region. The Westcourt Hotel is close to shopping centres, top golf courses, Newgrange and other historical sites.</p>
+	<p> The central location makes it perfect for weekend getaways, midweek heritage breaks, family, and business travel.  Well connected by road and rail, and featuring 27 modern rooms with high speed internet access. The team at the Westcourt Hotel are delighted to accommodate your event requirements including weddings, hen parties, banquets and meetings.   </p> 
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

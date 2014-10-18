@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.717184,-6.338207)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.717184,-6.338207),
+      map: map,
+      title: 'Drogheda Port'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">SHIPS</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="offshore.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> SHIPS</h3> </p>
+	
+<!--0	<p> <h2> <img src="EventImages/Event05_Pic01.jpg"/> </h2> </p> -->
+	
+	<p><b>Ships from different countries will visit Drogheda as part of the Maritime Festival. Some of those that can be seen are :</b></p>
+	<br>
+	
+	<p><b>The Spirit Of Oysterhaven</b> - Cork</p>
+	<p><img src="Ships/Ship01.jpg"/></p>
+	
+	<p><b>Irene Of Bridgewater</b> - 120 Ft West Country Trading Ketch - England</p>
+	<p><img src="Ships/Ship02.jpg"/></p>
+	
+	<p><b>Ruth</b> - A 100ft Baltic Trader - Sweden</p>
+	<p><img src="Ships/Ship03.jpg"/></p>
+	
+	<p><b>Bessie Ellen</b> - 110 Ft Trading Ketch - Plymouth, Devon , England</p>
+	<p><img src="Ships/Ship04.jpg"/></p>
+	
+	<p><b>Soteria</b> - 100ft Gaff Rig Schooner - Denmark</p>
+	<p><img src="Ships/Ship05.jpg"/></p>
+	
+	<p><b>Keewaydin</b> - 90ft BrixhamTrawler - North Sea, England/Denmark. </p>
+	<p><img src="Ships/Ship06.jpg"/></p>
+	
+	<p><b>Vilma</b> - 90ft Topsail Schooner, Wales</p>
+	<p><img src="Ships/Ship07.jpg"/></p>
+	
+	<p><b>Hebble Sand</b> - Ireland/UK</p>
+	<p><img src="Ships/Ship08.jpg"/></p>
+
+	   <br>
+	<p>Key Events </p>
+	<p><b> Opening Ceremony - Maritime Parade of Boats  </b></p>
+	<p>Friday: 11:45am</p>
+	<p><b>Pirate Ship Expo</b></p>
+	<p>FRI 13:30-14:30</p><p>SAT 11:30-12:15</p><p> SUN 15:00-15:45</p>
+	
+	<p><b>Ships are accessible to the pubic during the following times</b></p>
+				<p>Friday 13th 1.30pm – 4pm</p>
+				<p>Saturday 14th 11am – 3pm</p>
+				<p>Sunday 15th 12pm-4pm</p>
+							
+	<p><b>Weapon & Gun Display</b></p>
+    <p>FRI 15:00, 16:30, 18:30, 19:30, 20:30</p><p>SAT 16:30, 17:30, 18:30, 19:30, 20:30</p><p> SUN 16:30</p>
+   
+   <br>
+	<p>For more details on the ships visiting please see : <a href= "http://www.maritimefestival.ie/ships">http://www.maritimefestival.ie/ships</a>
+	
+	<p> </p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

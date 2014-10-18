@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Irish Maritime Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.717184,-6.338207)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.717184,-6.338207),
+      map: map,
+      title: 'Drogheda Port'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">MARITIME PHOTOGRAPHY AND ART</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="onshore.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> MARITIME PHOTOGRAPHY AND ART </h3> </p>
+	
+	<p> <h2> <img src="EventImages/Event11_Pic01.jpg"/> </h2> </p>
+	
+	<p>This zone of the festival will provide a platform of creative and Irish talent with a maritime twist.  Historical and contemporary paintings and photographs, some of which will be on sale, showcasing historical and present day scenes and themes will be exhibited </p>
+	<p>There will be Drawing workshops for adults & children, a photography Wall of Fame and plenty of artwork and photographs on sale. </p>
+	<p> The Maritime Photography and Art Zone can be found in the Maritime Pavilion, a warehouse at Drogheda Port.</p>
+
+	<p> <h2> <img src="EventImages/Event11_Pic02.jpg"/> </h2> </p>
+	<p> <h2> <img src="EventImages/Event11_Pic03.jpg"/> </h2> </p>
+	<br>
+	<p>For further information please see : <a href= "http://www.maritimefestival.ie/photography">www.maritimefestival.ie/photography</a></p>
+	
+	<p> Location: </p>
+	<p><b> Days :Friday - Sunday  </b></p>
+	<p> <i>Times </i> </p>
+	<p>Friday : 1:00pm - 7:00pm</p>
+	<p>Saturday: 10:00am - 7:00pm </p>
+	<p>Sunday : 12:00pm - 5:00pm </p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

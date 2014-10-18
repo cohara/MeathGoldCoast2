@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Maritime Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+	    
+		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script> 
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.727470, -6.294481)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.727470, -6.294481),
+      map: map,
+      title: 'Beaulieu House'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+	
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="LogoFestival.png">
+         </div>
+		 
+         <h1 class="ui-title">Beaulieu House</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h2> <img src="AttractionImages/Photo13.jpg" /> </h2> </p>
+	
+	<br>
+	
+	<p>	<h1> Beaulieu House  </h1>	</p>
+	
+	<br>
+	
+	<p>Beaulieu is an ancient estate overlooking the banks of the River Boyne, just over three miles from the town of Drogheda. For over 800 hundred years it has been home to just two families, the Plunketts and the Tichbournes.</p>
+	<p>Originally the site of a Norman fortress, the Plunkett family, first inhabited a motte and bailey and then a Jacobean house, the remains of which can be found in the fabric of the building you see today. No one knows where Beaulieu's name originated, however, it can be seen on a 1650 map of the area. One of the adjoining town lands has the wonderful name of Belle Tichbourne, after the family whose descendants still live in the house. Co-incedentally, 'baile'- is a Gaelic word which means town land, or home - and one can imagine that Beaulieu - keeping lookout on the Boyne river - was an important and strategic site.</p>
+	<p>The buildings at Beaulieu, evolved over time, from tower house to Jacobean building, finally being redesigned as a grand mansion, in the English style, by the Tichbourne family. As such, it is a rare example of late C17th Irish, domestic architecture to have survived without alterations. With the building of the house completed mainly between 1660-66, interior decorations, paintings, wood carvings and grand staircase were the last of the improvements added in 1723.</p>
+	
+	<br>
+	<p><a href= "http://www.beaulieuhouse.ie">www.beaulieuhouse.ie</a> </p>
+	<br>
+	
+	 <div id="map-canvas"></div>
+	 
+	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>
