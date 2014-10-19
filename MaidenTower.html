@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Meath Gold Coast</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+	    
+		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script> 
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.722615, -6.251567)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.722615, -6.251567),
+      map: map,
+      title: 'Maiden Tower'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+	
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="MGCBanner.jpg">
+         </div>
+		 
+         <h1 class="ui-title">The Maiden Tower</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h2> <img src="AttractionImages/Photo18.jpg" /> </h2> </p>
+	
+	<br>
+	
+	<p>	<h1> The Maiden Tower  </h1>	</p>
+	
+	<br>
+	
+	<p>The 60 foot high Maiden Tower is situated at the mouth of the Boyne Estuary just off the NorthWest end of Mornington beach. It was built during the reign of Queen Elizabeth I (some would say hence the name 'Maiden Tower') as a beacon to aid mariners on their way into Drogheda port. It was used as a landmark to mark the mouth of the Boyne and it is said that before the river walls were constructed in 1765, when a mariner brought his ship into line with the Tower and the Lady's Finger, the course of his ship marked the precise angle necessary to cross the bar. It also served as a look-out post during the Elizabethan Wars with Spain (1585-1603) to warn of any approaching enemy ships. The tower, the top of which is reached by spiral steps, commands a most extensive look-out over land and sea. It was originally brightly coloured, making it even more conspicuous and useful to mariners</p>
+	<p>The nearby Lady's Finger is a 13 meter-high solid obelisk-like tower which is believed to have been constructed much later than its companion, and was also used as a shipping beacon in past times. In between the two there also sits the Victorian Lifeboat station which closed in 1926 and is now a private dwelling.</p>
+	<p>Local legend has naturally grown up around the two buildings, adding to their history. The story goes that a young and very beautiful local woman had a lover who left to fight in a war overseas. Before he left, he told his sweetheart that he would return to her; if he survived it was on a ship with white sails, if he was killed his ship would return without him with black sails hoisted. Each day, for weeks the woman kept her constant and lonely vigil from the top of the tower for her lover to return. Months afterwards she spotted his ship on the horizon. Straining her vision to see the colour of the sails as the vessel came closer, it became clear to her that the sails were black. Overcome with grief she is said to have thrown herself off the top of the tower to her death. An obelisk was erected nearby in her memory which became known as "The Lady's Finger", reputedly because it represents the tragic young woman's finger bereft of her hoped-for wedding ring.</p>
+	
+	<br>
+		
+	 <div id="map-canvas"></div>
+	 
+	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>
