@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Meath Gold Coast</title> 
+<title>Meath Gold Coast</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
 
@@ -12,6 +12,29 @@
 <script src="js/jquery.js"></script>
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.697042,-6.243428)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.697042,-6.243428),
+      map: map,
+      title: 'The D Hotel'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
 
 <script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
@@ -27,7 +50,7 @@
             <img id="logo" style="float:right;height:109px" src="MGCBanner.jpg">
          </div>
 		 
-         <h1 class="ui-title">Churches</h1>
+         <h1 class="ui-title">Relish Cafe</h1>
 		
 		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 		 
@@ -37,34 +60,45 @@
 	
 	<div role="main" class="ui-content">
 	
-	<ul data-role="listview" data-inset="true">
-<li><a href="attractions.html">Back</a></li>
-
-</ul>
-
-
+         
 
 <ul data-role="listview" data-inset="true">
-    
-
-<li><a href="PeterCatholic.html"> <img src="icons/church.png"/> St Peter's Roman Catholic Church</a></li>
-<li><a href="PeterProtestant.html"> <img src="icons/church.png"/> St Peter's Church of Ireland</a></li>
-<li><a href="MaryCatholic.html"> <img src="icons/church.png"/> St Mary's Roman Catholic Church</a></li>
-<li><a href="MaryProtestant.html"> <img src="icons/church.png"/> St Mary's Church of Ireland</a></li>
-<li><a href="augustinian.html"> <img src="icons/church.png"/> The Augustinian Church</a></li>
-<li><a href="dominican.html"> <img src="icons/church.png"/> St Magdalens (Dominican) Church</a></li>
-
+<li><a href="food.html">Back</a></li>
 
 </ul>
 
+	
 
-
-
+	<p> <h3> Relish Cafe</h3> </p>
+	
+	<p> <h2> <img src="Food/Food001_01.jpg" /> </h2> </p>
+	
+	<p> Coast Road,
+		Bettystown,
+		Co.Meath</p>
+	<p> Tel: (041) 9813344   </p>     
+	<p><a href= "http://www.relishcafe.ie">www.relishcafe.ie</a> </p>
+		
+	<br>
+	<p>At Relish Cafe, our aim is to focus on a vibrant local community & produce uncomplicated foods using local suppliers and seasonal ingredients.</p>
+	<br>
+	
+	<p>Bettystown Cafe</p>
+	<p> <img src="Food/Food001_03.png" /> <p>
+	
+	<div id="map-canvas"></div>
+	
 	</div>
 	  
-	   <div data-role="panel" id="left-panel">
+	  <div data-role="panel" id="left-panel">
         <div class="panelhtml"></div>
     </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
 
 </body>
 </html>

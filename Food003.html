@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Meath Gold Coast</title> 
+<title>Meath Gold Coast</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
 
@@ -12,23 +12,22 @@
 <script src="js/jquery.js"></script>
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
-
-	    
-		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	
+	
     <script>
 
 function initialize() {
   var mapOptions = {
     zoom: 16,
-    center: new google.maps.LatLng(53.742233, -6.466388)
+    center: new google.maps.LatLng(53.6986306,-6.2441266)
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 	  
 	    var marker = new google.maps.Marker({
-      position:  new google.maps.LatLng(53.742233, -6.466388),
+      position:  new google.maps.LatLng(53.6986306,-6.2441266),
       map: map,
-      title: 'Mellifont Abbey'
+      title: 'The D Hotel'
   });
 
 }
@@ -37,7 +36,6 @@ $(document).on("pageinit", function(event) { initialize(); });
 
     </script>
 
-	
 <script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
@@ -52,7 +50,7 @@ $(document).on("pageinit", function(event) { initialize(); });
             <img id="logo" style="float:right;height:109px" src="MGCBanner.jpg">
          </div>
 		 
-         <h1 class="ui-title">Mellifont Abbey</h1>
+         <h1 class="ui-title">Bistro BT</h1>
 		
 		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 		 
@@ -62,40 +60,45 @@ $(document).on("pageinit", function(event) { initialize(); });
 	
 	<div role="main" class="ui-content">
 	
-
-
-
+         
 
 <ul data-role="listview" data-inset="true">
-<li><a href="attractions.html">Back</a></li>
+<li><a href="food.html">Back</a></li>
 
 </ul>
 
-
-
-
 	
 
-	<p> <h2> <img src="AttractionImages/Photo16.jpg" /> </h2> </p>
+	<p> <h3> Bistro BT</h3> </p>
+	
+	<p> <h2> <img src="Food/Food003_01.jpg" /> </h2> </p>
+	
+	<p>9 Strand View, Bettystown, Co. Meath</p>
+	<p> Tel: +353 (0)41 988-7794 </p>     
+	
+		
+	<br>
+	
+	<p>Bistro BT is an exciting little bistro located on Bettystown Beach bringing a small taste of the French Riviera to the Bettystown coastline. 
+	The restaurant/cafe itself sits on the beach with a magnificent view of the Irish Sea from all parts of the interior. 
+	Serving great wines and rich traditional coffee Bistro BT is the perfect place to sit down and relax watching the tide come in and the sun set.
+	</p>
+	
+	<p>
+	Our food ranges from the traditional breakfast to light bites, full lunches, and of course, naughty sweet treats afterwards. 
+	At Bistro BT everything is cooked to order made with fresh local products & all of our desserts are baked on premises giving that extra homely touch with none of the hard work!
+	</p>
 	
 	<br>
 	
-	<p>	<h1> Mellifont Abbey  </h1>	</p>
+	<p><b><u>Opening Hours</u></b></p>
+	<p> Open 7 days 9.30-17.30pm, Sunday from 10am <p>
 	
-	<br>
+	<div id="map-canvas"></div>
 	
-	<p>The first Cistercian monastery in Ireland founded in 1142 by St Malachy of Armagh, its most unusual feature is the octagonal Lavabo c. 1200. The Visitor Centre houses an interesting exhibition on the work of masons in the Middle Ages with fine examples of their craft on display. Access to site by stone stairway.</p>
-	<p>Location: 10km north-west of Drogheda off the R168 (Drogheda-Collon Road)</p>
-	
-	<br>
-	<p><a href= "http://www.heritageireland.ie/en/midlandseastcoast/OldMellifontAbbey/">Old Mellifont Abbey</a> </p>
-	<br>
-	
-	 <div id="map-canvas"></div>
-	 
 	</div>
-		  
-	   <div data-role="panel" id="left-panel">
+	  
+	  <div data-role="panel" id="left-panel">
         <div class="panelhtml"></div>
     </div><!-- /panel -->
 	
